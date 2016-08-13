@@ -1,122 +1,31 @@
-* {
-	margin: auto;
-	padding: 0;
-*/}
-
-ul {
-	list-style: none;
-}
-
 body {
-    background: url(img/backlight.png) no-repeat 50% 0 #849d8f;
+	background-color: #849d8f;
+	font-style: Roboto, Helvetica, sans-sefir;
+
+}
+
+a {
+	outline: none;
+	text-decoration:none;
+
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
+li {
+	 list-style-type: none;
 }
 
 
-
-
-                                          /*HEADER BEGIN*/
-
-.wrapper {
-	width: 900px;
-	margin: 0 auto;
-}
-
-h1 {
-	float: left;
-	margin: 9px 30px 0px 15px;
-}
-nav {
-	float: left;	
-	margin: 30px 0px 26px 0px;
-}
-nav li {
-	display: inline;
-	margin: 10px 30px 0px 0px;
-}
 
 nav li a {
-	color: #ffffff;
-	font-family: roboto;
 	font-size: 16px;
-}
-
-
-.nav2 {
-	margin: 23px 20px 0px 0px;
-	float: right;
-}
-
-.search {
-}
-
-.entrance {
-}
-
-.cart {
-}
-
-.contacts {
-	float: right;
-	margin: 0px 20px 0px 0px;
-}
-.schedule {
-	float: right;
-	font-size: 14px;
 	color: #ffffff;
-}
-.tel {
-	clear: right;
-	float: left;
-	font-size: 22px;
-	color: #ffffff;
-}
-
-
-                                          /*HEADER END*/
-
-
-
-/*                                          CONTENT BEGIN
-*/
-
-.content {
-	margin: 0 auto;
-	max-width: 900px;
-}
-
-.slider-block {
-	margin: 125px 127px 0px 128px;
 
 }
-
-.button1 {
-	margin: 544px 311px 1827px 311px
-}
-
-.slider-text {
-	font-size: 60px;
-    color: white;
-    font-family: Roboto;
-    margin: 0px 0px 0px 0px;
-    font-weight: bold;
-}
-
-.slider {
-	float: left;
-}
-
-
-
-
-
-
-
-
-/*                                          CONTENT END
-*/
-
-
-
-
-
-

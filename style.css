@@ -194,6 +194,10 @@ h3 {
 	clear: both;
 }
 
+.slide {
+	position: relative;
+}
+
 .slider {
 	position: relative;
 	top: -110px;
@@ -203,8 +207,8 @@ h3 {
 
 .slider-desccription {
 	position: absolute; 
-	top: 400px;
-	left: 268px;
+	top: 500px;
+	left: 210px;
 	color: white;
 	font-size: 60px;
 	font-weight: bolder;
@@ -494,30 +498,39 @@ padding-left: 20px;
 }
 
 
-.providers-about {
-	width: 510px;
+.providers-list {
+	width: 160px;
 	height: 43px;
 	height: 103px;
 	float: left;
 	font-size: 13px;
-}
-
-.providers-about a {
-	text-decoration: none;
-	margin-top: 38px;
-}
-
-.footer-menu1 {
-	float: left; 
-	margin-top: 38px;
+	margin-top: 36px;
+	background: url("../img/hert.svg") no-repeat;
+	padding-left: 22px;
 
 }
 
-.footer-menu2{
+
+.providers-list li {
+	display: block;	
+}
+
+
+.about-list {
+	width: 213px;
+	height: 43px;
+	height: 103px;
 	float: left;
-	margin-left: 35px;
-	margin-top: 38px;
+	font-size: 13px;
+	margin-top: 36px;
+
 }
+
+
+.about-list li {
+	display: block;	
+}
+
 
 .copyright {
 	padding-top: 20px;
@@ -546,31 +559,13 @@ padding-left: 20px;
 
 
 
-.item:first-child,
-.item:nth-child(2),
-.item:nth-child(3),
-.item:nth-child(5),
-.item:nth-child(6),
-.item:nth-child(7),
-.item:nth-child(9),
-.item:nth-child(10),
-.item:nth-child(11)
-{
-	margin-right:26px;
+.item {
+	margin-right: 26px;
 }
 
-
-
-.item:nth-child(4),
-.item:nth-child(8),
-.item:nth-child(12)
-{
-
-	margin-right:0px;
+.item:nth-child(4n) {
+	margin-right: 0;
 }
-
-
-
 
 
 .item p {

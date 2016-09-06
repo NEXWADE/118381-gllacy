@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Gllacy Shop</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/mini_style.css" rel="stylesheet">
 </head>
 <body>
 <input id="pg-1" name="paginat" type="radio" checked>
@@ -14,35 +13,41 @@
 <div class="wrapper">
     <div class="wrapper-content">
         <header class="main-header clearfix">
-            <div class="logo"><img src="img/logo.svg" alt="Gllacy Shop"></div>
+            <div class="logo"><img src="img/logo.svg" alt="Gllacy Shop" height="64" width="154"></div>
             <nav class="main-menu">
                 <ul class="main-nav">
                     <li>
-                        <a class="catalog-sub" href><span>Каталог</span></a>
+                        <a class="catalog-sub" href="#"><span>Каталог</span></a>
                         <ul class="sub-menu">
                             <b>Новинки</b>
                             <li><a href="catalog.html">Сливочное</a></li>
-                            <li><a href>Щербеты</a></li>
-                            <li><a href>Фруктовый лед</a></li>
-                            <li><a href>Мелорин</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
                         </ul>
                     </li>
-                    <li><a href><span>Доставка и оплата</span></a></li>
-                    <li><a href><span>О Компании</span></a></li>
+                    <li><a href="#"><span>Доставка и оплата</span></a></li>
+                    <li><a href="#"><span>О Компании</span></a></li>
                 </ul>
             </nav>
 
             <div class="nav2">
                 <div class="search-block">
                     <a class="search" href="#"></a>
-                    <input type="text" placeholder="Что ищем?">
+                    <input id="search" type="text" placeholder="Что ищем?">
                 </div>
 
                 <div class="signin-block">
                     <a class="signin" href="#">       Вход</a>
                     <div class="signin-hover">
-                        <input name="email" type="text" placeholder="Электронная почта">
-                        <input name="pwrd" type="password" placeholder="Пароль">
+                        <div class="inputWrapper">
+                        <input name="signmail" type="text" placeholder="Электронная почта" required>
+                        <label for="signmail">Электронная почта</label>
+                        </div>
+                        <div class="inputWrapper">
+                        <input id="pwrd" name="pwrd" type="password" placeholder="Пароль" required>
+                        <label for="pwrd">Пароль</label>
+                        </div>
                         <button class="btn" type="submit">Войти</button>
                         <a href="#">Забыли пароль?</a>
                         <a href="#">Новая регистрация</a>
@@ -92,9 +97,9 @@
                     <div class="slide" id="slide2">
                         <img src="img/icecream_backlight2.png" alt="Шоколадный пломбир и лимонный сорбет" height="881" width="1045">
                         <div class="slider-desccription">
-					<span class="icecram-text2">
-						Шоколадный пломбир и лимонный сорбет
-					</span>
+                    <span class="icecram-text2">
+                        Шоколадный пломбир и лимонный сорбет
+                    </span>
                             <br><a class="btn-icecram btn" href="#">
                             Давайте оба!
                         </a>
@@ -106,9 +111,9 @@
                     <div class="slide" id="slide3">
                         <img src="img/icecream_backlight3.png" alt="Пломбир с помадкой и клубничный щербет" height="881" width="1045">
                         <div class="slider-desccription">
-					<span class="icecram-text3">
-						Пломбир с помадкой и клубничный щербет
-					</span>
+                    <span class="icecram-text3">
+                        Пломбир с помадкой и клубничный щербет
+                    </span>
                             <br><a class="btn-icecram btn" href="#">
                             Давайте оба!
                         </a>
@@ -128,7 +133,7 @@
 
 
                 <!-- Первый баннер -->
-                <div class="banners">
+                <div class="banners clearfix">
                     <div class="banner1 banner">
                         <h2>Малинка даром!</h2>
                         <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -144,15 +149,15 @@
                 </div>
 
                 <!-- Хиты продаж  -->
-                <div class="bestsellers">
+                <div class="bestsellers clearfix">
                     <div class="bstsr bstsr1">
                         <div class="btsr-icecream">
                             <img src="img/orange_jam.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
                             <div class="bstsr-icon"><img src="img/bestsellers.png" alt="Хит" height="61" width="61"></div>
                             <span class="btst-price"><b>310₽</b>/кг</span>
                         </div>
-                        <p><span>Сливочное с апельсиновым</span> <span>джемом и цитрусовой стружкой</span></p>
-                        <a class="bstsr-btn btn" href>Быстрый просмотр</a>
+                        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <a class="bstsr-btn btn" href="#">Быстрый просмотр</a>
                     </div>
 
                     <div class="bstsr bstsr2">
@@ -161,8 +166,8 @@
                             <div class="bstsr-icon"><img src="img/bestsellers.png" alt="Хит" height="61" width="61"></div>
                             <span class="btst-price"><b>380₽</b>/кг</span>
                         </div>
-                        <p><span>Сливочно-кофейное с кусочками шоколада</span></p>
-                        <a class="bstsr-btn btn" href>Быстрый просмотр</a>
+                        <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                        <a class="bstsr-btn btn" href="#">Быстрый просмотр</a>
                     </div>
 
                     <div class="bstsr bstsr3">
@@ -171,8 +176,8 @@
                             <div class="bstsr-icon"><img src="img/bestsellers.png" alt="Хит" height="61" width="61"></div>
                             <span class="btst-price"><b>355₽</b>/кг</span>
                         </div>
-                        <p><span>Сливочно-клубничное с</span> <span>присыпкой из белого шоколада</span> </p>
-                        <a class="bstsr-btn btn" href>Быстрый просмотр</a>
+                        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <a class="bstsr-btn btn" href="#">Быстрый просмотр</a>
                     </div>
 
                     <div class="bstsr bstsr4">
@@ -181,14 +186,14 @@
                             <div class="bstsr-icon"><img src="img/bestsellers.png" alt="Хит" height="61" width="61"></div>
                             <span class="btst-price"><b>415₽</b>/кг</span>
                         </div>
-                        <p><span>Сливочное крем-брюле с</span>  <span>карамельной подливкой</span></p>
-                        <a class="bstsr-btn btn" href>Быстрый просмотр</a>
+                        <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                        <a class="bstsr-btn btn" href="#">Быстрый просмотр</a>
                     </div>
                 </div>
 
 
                 <!-- Блок описания магазина -->
-                <div class="description">
+                <div class="description clearfix">
                     <h3>
                         Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
                     </h3>
@@ -196,27 +201,27 @@
 
 
                     <p>
-                        <img src="img/mini_iceream.svg" alt="мороженое">
+                        <img src="img/mini_iceream.svg" alt="мороженое" height="49" width="49">
                         Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
                     </p>
 
 
                     <p>
-                        <img src="img/mini_cow.svg" alt="корова">
+                        <img src="img/mini_cow.svg" alt="корова" height="49" width="49">
                         Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                     </p>
 
 
 
                     <p>
-                        <img src="img/mini_leaf.svg" alt="листочек">
+                        <img src="img/mini_leaf.svg" alt="листочек" height="49" width="49">
                         Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                     </p>
 
 
 
                     <p>
-                        <img src="img/mini_thermometer.svg" alt="термометр">
+                        <img src="img/mini_thermometer.svg" alt="термометр" height="49" width="49">
                         Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                     </p>
                 </div>
@@ -224,12 +229,12 @@
 
 
                 <!-- Блок блога -->
-                <div class="blog-subscribe">
+                <div class="blog-subscribe clearfix">
                     <div class="blog-news">
                         <p>
                             Новое в нашем блоге
                         </p>
-                        <a href>
+                        <a href="#">
                             10  способов сервировки фруктовых щербетов к столу
                         </a>
                     </div>
@@ -240,7 +245,12 @@
                             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
                         </p>
                         <form class="sbsb-form" action>
+
+                            <div class="inputWrapper">
                             <input id="sbsb" type="text" placeholder="Электронная почта">
+                            <label for="sbsb">Электронная почта</label>
+                            </div>
+
                             <button class="btn" type="submit">Отправить</button>
                         </form>
                     </div>
@@ -249,33 +259,13 @@
                 </div>
 
             </div>
-            <!-- 		Контакты -->
-            <div class="map" id="map">
-                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-                <script>
-                    ymaps.ready(function () {
-                        //добавление карты в блок с идентификатором #map
-                        var myMap = new ymaps.Map('map', {
-                            center: [59.939346,30.329256], //координаты центра карты
-                            zoom: 16 //масштаб
-                        }, {
-                            searchControlProvider: 'yandex#search'
-                        });
-                        //запрет скроллинга при прокрутке страницы
-                        myMap.behaviors.disable('scrollZoom');
-                        //создание маркера;
-                        var myPlacemark = new ymaps.Placemark ([59.938631,30.323055], {
-                            hintContent: 'Магазин Глейси'
-                        }, {
-                            iconLayout: 'default#image',
-                            iconImageHref: 'img/pin.png', //иконка маркера
-                            iconImageSize: [80, 140], //размер маркера
-                            iconImageOffset: [-40, -142] //смещение маркера
-                        });
-                        //добавление маркера на карту
-                        myMap.geoObjects.add(myPlacemark);
-                    });
-                </script>
+
+        </main>
+    <div class="map" id="map">
+        <div class map-wrapper>">
+                <img class="map-background" src="img/map.jpg" alt="Карта" height="430" width="1200">
+        </div>
+
                 <div class="contacts">
                     <p>Адрес главного офиса и офлайн магазина:
                         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -286,11 +276,9 @@
                     </p>
 
 
-                    <a class="contacts-btn btn" href>Форма обратной связи</a>
+                    <a class="contacts-btn btn" href="#">Форма обратной связи</a>
                 </div>
             </div>
-        </main>
-
 
 
 
@@ -309,38 +297,45 @@
 
         <footer>
             <div class="social">
-                <a class="twt" href></a>
-                <a class="inst" href></a>
-                <a class="fb" href></a>
-                <a class="vk" href></a>
+                <a class="twt" href="#"></a>
+                <a class="inst" href="#"></a>
+                <a class="fb" href="#"></a>
+                <a class="vk" href="#"></a>
 
 
             </div>
 
-            <ul class="providers-list">
-                <li><a href>Для поставщиков</a></li>
-                <li><a href>О производстве</a></li>
-            </ul>
-
-            <ul class="about-list">
-                <li><a href>Наши документы</a></li>
-                <li><a href>Экологические стандарты</a></li>
+            <ul class="providers-list clearfix">
+                <li class="active"><a href="#">Для поставщиков</a></li>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">О производстве</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
             </ul>
 
 
             <div class="copyright">
                 <a href="http://htmlacademy.ru"><img src="img/html_academy_logo.svg" height="38" width="108"></a>
                 <span class="html-academy">
-					Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2016
-				</span>
+                    Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2016
+                </span>
             </div>
         </footer>
 
         <div class="modal-content">
             <span>Мы обязательно вам ответим!</span>
-            <input type="text" placeholder="Как вас зовут?">
-            <input type="text" placeholder="Ваша почта для ответа?">
-            <textarea placeholder="Напишите что-нибудь..."></textarea>
+
+            <div class="inputWrapper">
+            <input id="name" type="text" placeholder="Как вас зовут?" required>
+            <label for="name">Как вас зовут?</label>
+            </div>
+            <div class="inputWrapper">
+            <input id="email" type="text" placeholder="Ваша почта для ответа?" required>
+            <label for="email">Ваша почта для ответа?</label>
+            </div>
+            <div class="inputWrapper">
+            <textarea id="message" placeholder="Напишите что-нибудь..."></textarea>
+            <label for="message">Напишите что-нибудь...</label>
+            </div>
             <button class="btn" type="button" title="Отправить">Отправить</button>
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         </div>
@@ -348,5 +343,8 @@
 
     </div>
 </div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 </html>

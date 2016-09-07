@@ -17,6 +17,7 @@
     font-style: normal;
     src: url('../fonts/robotomedium.woff2') format('woff2'), url('.fonts/robotomedium.woff') format('woff');
 }
+
 .wrapper {
     min-width: 1200px;
     height: 100%;
